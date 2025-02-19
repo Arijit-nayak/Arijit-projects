@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Notes</h1>
+      <button id="addNoteBtn" onclick="openNoteModal()">Add Note</button>
+    </header>
+    <div id="notes-container"></div>
+  </div>
+  
+  
+  <div id="noteModal" class="modal">
+    <div class="modal-content">
+      <textarea id="noteText" placeholder="Take a note..."></textarea>
+      <div class="modal-footer">
+        <input type="color" id="noteColor" title="Pick Note Color" value="#fffdc1">
+        <button onclick="saveNote()">Save Note</button>
+        <button onclick="closeNoteModal()">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
